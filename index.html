@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="PageKind privacy promise — no data collected, no analytics, no third-party SDKs, no tracking. All scanning happens on your iPhone.">
+  <meta name="theme-color" content="#2F6B7A">
+  <title>PageKind privacy promise</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%232F6B7A'/%3E%3Ctext x='50' y='62' font-family='-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif' font-size='38' font-weight='600' text-anchor='middle' fill='%23FAFAF7'%3EPK%3C/text%3E%3C/svg%3E">
+  <style>
+    :root {
+      --fg: #1A1A1A;
+      --bg: #FAFAF7;
+      --accent: #2F6B7A;
+      --muted: #555;
+      --rule: rgba(0,0,0,0.08);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --fg: #F5F5F2;
+        --bg: #1F2326;
+        --accent: #5AA5B7;
+        --muted: #B0B0B0;
+        --rule: rgba(255,255,255,0.12);
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.55;
+      color: var(--fg);
+      background: var(--bg);
+      -webkit-font-smoothing: antialiased;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 56px 24px 96px;
+    }
+    header {
+      margin-bottom: 40px;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 6px 10px;
+      border-radius: 8px;
+      background: var(--accent);
+      color: #FAFAF7;
+      font-weight: 600;
+      font-size: 13px;
+      letter-spacing: 0.02em;
+    }
+    .badge .mono {
+      display: inline-block;
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+      background: rgba(255,255,255,0.18);
+      text-align: center;
+      line-height: 28px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 14px;
+    }
+    h1 {
+      font-size: 32px;
+      line-height: 1.2;
+      margin: 18px 0 6px;
+      font-weight: 600;
+    }
+    h2 {
+      font-size: 20px;
+      margin: 36px 0 10px;
+      font-weight: 600;
+    }
+    p, ul { margin: 0 0 14px; }
+    ul { padding-left: 22px; }
+    li { margin-bottom: 4px; }
+    strong { font-weight: 600; }
+    a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+    .lede {
+      font-size: 19px;
+      font-weight: 500;
+      margin: 14px 0 28px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 14px 0 22px;
+      font-size: 15px;
+    }
+    th, td {
+      text-align: left;
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--rule);
+    }
+    th {
+      color: var(--muted);
+      font-weight: 500;
+    }
+    footer {
+      margin-top: 56px;
+      padding-top: 24px;
+      border-top: 1px solid var(--rule);
+      color: var(--muted);
+      font-size: 14px;
+    }
+    footer a { color: var(--muted); }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <span class="badge"><span class="mono">PK</span> PageKind</span>
+      <h1>Privacy promise</h1>
+      <p class="lede"><strong>PageKind does not collect, transmit, or share any user data.</strong></p>
+    </header>
+
+    <p>Documents you scan with PageKind remain on your iPhone. PageKind contains no analytics, no third-party SDKs, no advertising, and no tracking technology. The app makes no network requests.</p>
+
+    <h2>What PageKind does on your device</h2>
+    <ul>
+      <li>Uses your iPhone's camera (with your permission) to scan documents.</li>
+      <li>Stores scanned images and generated PDFs in PageKind's private storage on your device.</li>
+      <li>Runs Apple's on-device Vision framework to recognize text in your scans, so you can search inside them. This happens locally; no scan content is sent anywhere.</li>
+      <li>When you tap Share or Save, you choose where your file goes (Files, Mail, Messages, iCloud Drive, AirDrop, another app, etc.). After that, the destination app or service governs the file — PageKind has no further visibility.</li>
+    </ul>
+
+    <h2>What PageKind does not do</h2>
+    <ul>
+      <li>No account or sign-in.</li>
+      <li>No advertising, ad SDKs, or ad tracking.</li>
+      <li>No third-party analytics, telemetry, or crash-reporting SDKs.</li>
+      <li>No cloud sync run by us. PageKind has no servers.</li>
+      <li>No watermark on your exported files.</li>
+      <li>No subscription, paywall, or in-app purchases.</li>
+    </ul>
+
+    <h2>Permissions</h2>
+    <p>PageKind requests only one permission:</p>
+    <ul>
+      <li><strong>Camera</strong> — to scan documents. You can grant or revoke this in iOS Settings → PageKind at any time.</li>
+    </ul>
+    <p>PageKind does <strong>not</strong> request:</p>
+    <ul>
+      <li>Photos library read access.</li>
+      <li>Microphone access (the document scanner records no audio).</li>
+      <li>Location, contacts, calendar, reminders, motion, health, or any other personal-data permission.</li>
+      <li>Notification permission.</li>
+      <li>Network access of any kind (verified by an architectural build-time check that prevents network code from being added to the codebase).</li>
+    </ul>
+
+    <h2>App Store nutrition label</h2>
+    <table>
+      <thead>
+        <tr><th>Category</th><th>Data</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Data Used to Track You</td><td><strong>None</strong></td></tr>
+        <tr><td>Data Linked to You</td><td><strong>None</strong></td></tr>
+        <tr><td>Data Not Linked to You</td><td><strong>None</strong></td></tr>
+      </tbody>
+    </table>
+    <p>In short: "Data Not Collected" across every category.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy: <a href="mailto:grif.jef@gmail.com">grif.jef@gmail.com</a></p>
+
+    <footer>
+      <p>This page is the canonical privacy statement for PageKind. The same Markdown source renders the in-app Privacy Promise screen and this page, so the two cannot drift. The source lives in the <a href="https://github.com/grifjef/page-kind/blob/main/docs/privacy-promise.md">PageKind repository</a> on GitHub.</p>
+      <p>Last updated: 2026-05-27.</p>
+    </footer>
+  </main>
+</body>
+</html>
