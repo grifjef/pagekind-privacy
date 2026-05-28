@@ -127,7 +127,13 @@
       <li>Stores scanned images and generated PDFs in PageKind's private storage on your device.</li>
       <li>Runs Apple's on-device Vision framework to recognize text in your scans, so you can search inside them. This happens locally; no scan content is sent anywhere.</li>
       <li>When you tap Share or Save, you choose where your file goes (Files, Mail, Messages, iCloud Drive, AirDrop, another app, etc.). After that, the destination app or service governs the file — PageKind has no further visibility.</li>
+      <li>Stores a small amount of user-preference data in iOS UserDefaults: whether you've seen the welcome screen, and which scan mode you used most recently (so the picker can offer it as a one-tap shortcut). These values stay on your device; no scan content is stored in UserDefaults.</li>
     </ul>
+
+    <h2>Searchable PDFs and shared scans</h2>
+    <p>When you export a PDF with the "Searchable text layer" option enabled (the default), PageKind embeds the OCR'd text as an invisible layer in the PDF so Cmd-F finds words inside the document. The recognized text becomes part of the file. If you then share that PDF with someone, the text content travels with it as plaintext — anyone who can open the file can read or extract the text.</p>
+    <p>For sensitive scans (IDs with numbers, medical documents, etc.), turn the toggle off in the export sheet. The PDF will still be a normal scanned image without the embedded text layer, exactly like a photo.</p>
+    <p>The OCR itself runs entirely on-device. PageKind never sends a scan to any server.</p>
 
     <h2>What PageKind does not do</h2>
     <ul>
@@ -170,8 +176,8 @@
     <p>Questions about this policy: <a href="mailto:grif.jef@gmail.com">grif.jef@gmail.com</a></p>
 
     <footer>
-      <p>This page is the canonical privacy statement for PageKind. The same Markdown source renders the in-app Privacy Promise screen and this page, so the two cannot drift. The source lives in the <a href="https://github.com/grifjef/page-kind/blob/main/docs/privacy-promise.md">PageKind repository</a> on GitHub.</p>
-      <p>Last updated: 2026-05-27.</p>
+      <p>This page is the canonical privacy statement for PageKind. The same Markdown source renders the in-app Privacy Promise screen and this page, so the two cannot drift. The source lives in the <a href="https://github.com/grifjef/page-kind/blob/main/docs/privacy-promise.md">PageKind repository</a> on GitHub. <a href="https://github.com/grifjef/page-kind/blob/main/docs/adr/0013-invisible-text-layer.md">ADR 0013</a> documents the design and privacy implications of the invisible text layer in detail.</p>
+      <p>Last updated: 2026-05-28.</p>
     </footer>
   </main>
 </body>
