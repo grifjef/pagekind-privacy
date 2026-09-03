@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="PageKind Scanner privacy policy — no data collected, no analytics, no third-party SDKs. All scanning happens on-device.">
+  <meta name="theme-color" content="#2F6B7A">
+  <title>Privacy Policy — PageKind Scanner</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%232F6B7A'/%3E%3Ctext x='50' y='62' font-family='-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif' font-size='38' font-weight='600' text-anchor='middle' fill='%23FAFAF7'%3EPK%3C/text%3E%3C/svg%3E">
+  <style>
+    :root { --fg:#1A1A1A; --bg:#FAFAF7; --accent:#2F6B7A; --muted:#555; --rule:rgba(0,0,0,0.08); }
+    @media (prefers-color-scheme:dark) { :root { --fg:#F5F5F2; --bg:#1F2326; --accent:#5AA5B7; --muted:#B0B0B0; --rule:rgba(255,255,255,0.12); } }
+    *{box-sizing:border-box;} html,body{margin:0;padding:0;}
+    body { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif; font-size:17px; line-height:1.55; color:var(--fg); background:var(--bg); -webkit-font-smoothing:antialiased; }
+    .container { max-width:720px; margin:0 auto; padding:56px 24px 96px; }
+    header { margin-bottom:40px; }
+    .badge { display:inline-flex; align-items:center; gap:10px; padding:6px 10px; border-radius:8px; background:var(--accent); color:#FAFAF7; font-weight:600; font-size:13px; letter-spacing:0.02em; }
+    .badge .mono { display:inline-block; width:28px; height:28px; border-radius:6px; background:rgba(255,255,255,0.18); text-align:center; line-height:28px; font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:14px; }
+    h1 { font-size:32px; line-height:1.2; margin:18px 0 6px; font-weight:600; }
+    h2 { font-size:20px; margin:36px 0 10px; font-weight:600; }
+    .updated { color:var(--muted); font-size:14px; margin:0 0 24px; }
+    p,ul { margin:0 0 14px; }
+    ul { padding-left:22px; }
+    li { margin-bottom:4px; }
+    strong { font-weight:600; }
+    a { color:var(--accent); text-decoration:underline; text-underline-offset:3px; }
+    .lede { font-size:19px; font-weight:500; margin:14px 0 28px; }
+    table { width:100%; border-collapse:collapse; margin:14px 0 22px; font-size:15px; }
+    th,td { text-align:left; padding:10px 12px; border-bottom:1px solid var(--rule); }
+    th { color:var(--muted); font-weight:500; }
+    footer { margin-top:56px; padding-top:24px; border-top:1px solid var(--rule); color:var(--muted); font-size:14px; }
+    footer a { color:var(--muted); }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <span class="badge"><span class="mono">PK</span> PageKind Scanner</span>
+      <h1>Privacy Policy</h1>
+      <p class="updated">Last updated: 2026-09-03</p>
+      <p class="lede"><strong>PageKind Scanner does not collect, transmit, or share any user data.</strong></p>
+    </header>
+
+    <p>PageKind Scanner is a native iOS application that scans QR codes and captures photos using your iPhone camera. Privacy is a core design principle: the app communicates with no servers and keeps everything on your device.</p>
+
+    <h2>Data We Collect</h2>
+    <p><strong>None.</strong> PageKind Scanner does not collect, transmit, or share any personal information.</p>
+
+    <h2>Camera</h2>
+    <p>The app requests access to your device camera to scan QR codes and capture still photos. Video frames are processed entirely on-device using Apple's AVFoundation and Vision frameworks. No images or video are sent anywhere.</p>
+
+    <h2>Photos Library</h2>
+    <p>When you tap <strong>Save</strong> after capturing a photo, the app writes that image to your iOS Photos library using Apple's PHPhotoLibrary API. PageKind Scanner requests <em>add-only</em> access — it can save new photos but cannot read your existing library. The image you save is then governed by iOS's normal Photos management.</p>
+
+    <h2>Scan History</h2>
+    <p>When you scan a QR code, the decoded URL is saved to a local list stored in your app's private UserDefaults on your device. This list:</p>
+    <ul>
+      <li>Never leaves your device</li>
+      <li>Holds a maximum of 20 entries, oldest removed first</li>
+      <li>Can be cleared at any time via the History tab</li>
+    </ul>
+
+    <h2>Third-Party Services</h2>
+    <p>PageKind Scanner uses <strong>no third-party SDKs, analytics libraries, advertising networks, or crash-reporting tools</strong>. The binary contains only Apple system frameworks.</p>
+
+    <h2>App Store Nutrition Label</h2>
+    <table>
+      <thead><tr><th>Category</th><th>Data</th></tr></thead>
+      <tbody>
+        <tr><td>Data Used to Track You</td><td><strong>None</strong></td></tr>
+        <tr><td>Data Linked to You</td><td><strong>None</strong></td></tr>
+        <tr><td>Data Not Linked to You</td><td><strong>None</strong></td></tr>
+      </tbody>
+    </table>
+    <p>In short: "Data Not Collected" across every category.</p>
+
+    <h2>Children</h2>
+    <p>PageKind Scanner does not knowingly collect any information from anyone, including children under 13.</p>
+
+    <h2>Changes</h2>
+    <p>If this policy ever changes, this page will be updated and the App Store listing will reflect the new date.</p>
+
+    <h2>Contact</h2>
+    <p>Questions or concerns: <a href="mailto:grif.jef@gmail.com">grif.jef@gmail.com</a></p>
+
+    <footer>
+      <p>This policy applies to PageKind Scanner for iOS (bundle ID <code>com.pagekind.iphone.scanner</code>). Source: <a href="https://github.com/grifjef/pagekind-privacy">grifjef/pagekind-privacy</a>.</p>
+      <p><a href="../">← PageKind document scanner privacy policy</a> &nbsp;·&nbsp; <a href="support/">Support</a></p>
+    </footer>
+  </main>
+</body>
+</html>
